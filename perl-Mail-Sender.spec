@@ -2,8 +2,8 @@
 Summary:	Mail-Sender perl module
 Summary(pl):	Modu³ perla Mail-Sender
 Name:		perl-Mail-Sender
-Version:	0.7.04
-Release:	2
+Version:	0.7.06
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -29,12 +29,12 @@ przez serwer SMTP.
 
 %build
 perl Makefile.PL
-%{__make}
+yes "" | %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+yes "" | %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf Changes README 
 
