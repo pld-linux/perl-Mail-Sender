@@ -8,12 +8,12 @@
 Summary:	Mail::Sender - sending mails with attachments through an SMTP server
 Summary(pl):	Mail::Sender - wysy³anie poczty z za³±cznikami za po¶rednictwem serwera SMTP
 Name:		perl-Mail-Sender
-Version:	0.8.06
-Release:	2
+Version:	0.8.08
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1e28f782716af562396cd0df7f2caa2f
+# Source0-md5:	6076c4fbaf6a285a406daa4e84b0cf7d
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	rpm-perlprov >= 4.1-13
