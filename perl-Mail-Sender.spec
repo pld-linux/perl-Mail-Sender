@@ -54,4 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Mail/Sender.pm
+%{perl_vendorlib}/Mail/Sender
 %{_mandir}/man3/*
