@@ -37,7 +37,7 @@ bezpo¶rednio z Perla z serwerem, korzystaj±c z modu³u Socket.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} </dev/null
 
 %{!?_without_tests:%{__make} test}
