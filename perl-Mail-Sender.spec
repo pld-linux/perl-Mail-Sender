@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Mail
-%define	pnam	Sender
+%define		pdir	Mail
+%define		pnam	Sender
 Summary:	Mail::Sender - sending mails with attachments through an SMTP server
 Summary(pl):	Mail::Sender - wysy³anie poczty z za³±cznikami za po¶rednictwem serwera SMTP
 Name:		perl-Mail-Sender
