@@ -28,6 +28,7 @@ Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	b163c9a2cc3ff3efd81454c86951d924
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	rpm-perlprov >= 4.1-13
