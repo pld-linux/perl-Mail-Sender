@@ -3,7 +3,7 @@ Summary:	Mail-Sender perl module
 Summary(pl):	Modu³ perla Mail-Sender
 Name:		perl-Mail-Sender
 Version:	0.7.08
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Mail/Mail-Sender-%{versio
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-MIME-Base64
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
