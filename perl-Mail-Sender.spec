@@ -5,30 +5,15 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Mail
 %define	pnam	Sender
-Summary:	Mail::Sender Perl module
-Summary(cs):	Modul Mail::Sender pro Perl
-Summary(da):	Perlmodul Mail::Sender
-Summary(de):	Mail::Sender Perl Modul
-Summary(es):	Módulo de Perl Mail::Sender
-Summary(fr):	Module Perl Mail::Sender
-Summary(it):	Modulo di Perl Mail::Sender
-Summary(ja):	Mail::Sender Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Mail::Sender ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Mail::Sender
-Summary(pl):	Modu³ Perla Mail::Sender
-Summary(pt):	Módulo de Perl Mail::Sender
-Summary(pt_BR):	Módulo Perl Mail::Sender
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Mail::Sender
-Summary(sv):	Mail::Sender Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Mail::Sender
-Summary(zh_CN):	Mail::Sender Perl Ä£¿é
+Summary:	Mail::Sender - sending mails with attachments through an SMTP server
+Summary(pl):	Mail::Sender - wysy³anie poczty z za³±cznikami za po¶rednictwem serwera SMTP
 Name:		perl-Mail-Sender
-Version:	0.8.05
-Release:	3
+Version:	0.8.06
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b163c9a2cc3ff3efd81454c86951d924
+# Source0-md5:	1e28f782716af562396cd0df7f2caa2f
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -38,12 +23,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'perl(Mail::Sender.config)' 'perl(Authen::NTLM)' 'perl(Digest::HMAC_MD5)'
 
 %description
-Mail::Sender is a module for sending mails with attachments through an
-SMTP server.
+Mail::Sender provides an object oriented interface to sending mails.
+It doesn't need any outer program. It connects to a mail server
+directly from Perl, using Socket.
 
 %description -l pl
-Mail::Sender jest modu³em s³u¿±cym do wysy³ania poczty z za³±cznikami
-przez serwer SMTP.
+Mail::Sender udostêpnia zorientowany obiektowo interfejs do wysy³ania
+poczty. Nie potrzebuje ¿adnego zewnêtrznego programu. £±czy siê
+bezpo¶rednio z Perla z serwerem, korzystaj±c z modu³u Socket.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -52,6 +39,7 @@ przez serwer SMTP.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor 
 %{__make} </dev/null
+
 %{!?_without_tests:%{__make} test}
 
 %install
