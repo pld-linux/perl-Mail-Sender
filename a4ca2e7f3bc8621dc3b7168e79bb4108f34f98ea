@@ -1,0 +1,1 @@
+_noautoreq perl(%{pdir}::%{pnam}.config)
