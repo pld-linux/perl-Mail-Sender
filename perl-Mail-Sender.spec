@@ -4,8 +4,8 @@
 Summary:	Mail::Sender perl module
 Summary(pl):	Modu³ perla Mail::Sender
 Name:		perl-Mail-Sender
-Version:	0.7.12
-Release:	2
+Version:	0.7.13.1
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
