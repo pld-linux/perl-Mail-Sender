@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Mail
 %define	pnam	Sender
-%include	/usr/lib/rpm/macros.perl
 Summary:	Mail-Sender perl module
 Summary(pl):	Modu³ perla Mail-Sender
 Name:		perl-Mail-Sender
 Version:	0.7.12
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +24,7 @@ Mail-Sender jest modu³em s³u¿±cym do wysy³ania poczty z za³±cznikami
 przez serwer SMTP.
 
 %prep
-%setup -q -n Mail-Sender-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
