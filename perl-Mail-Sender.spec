@@ -46,7 +46,8 @@ bezpo¶rednio z Perla z serwerem, korzystaj±c z modu³u Socket.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
