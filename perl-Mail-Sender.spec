@@ -1,10 +1,29 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Mail
 %define	pnam	Sender
-Summary:	Mail::Sender perl module
-Summary(pl):	Modu³ perla Mail::Sender
+Summary:	Mail::Sender Perl module
+Summary(cs):	Modul Mail::Sender pro Perl
+Summary(da):	Perlmodul Mail::Sender
+Summary(de):	Mail::Sender Perl Modul
+Summary(es):	Módulo de Perl Mail::Sender
+Summary(fr):	Module Perl Mail::Sender
+Summary(it):	Modulo di Perl Mail::Sender
+Summary(ja):	Mail::Sender Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Mail::Sender ÆŞ ¸ğÁÙ
+Summary(no):	Perlmodul Mail::Sender
+Summary(pl):	Modu³ Perla Mail::Sender
+Summary(pt):	Módulo de Perl Mail::Sender
+Summary(pt_BR):	Módulo Perl Mail::Sender
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Mail::Sender
+Summary(sv):	Mail::Sender Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Mail::Sender
+Summary(zh_CN):	Mail::Sender Perl Ä£¿é
 Name:		perl-Mail-Sender
-Version:	0.7.14.1
+Version:	0.8.00
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -28,12 +47,13 @@ przez serwer SMTP.
 
 %build
 perl Makefile.PL
-yes "" | %{__make}
+%{__make} </dev/null
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-yes "" | %{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
