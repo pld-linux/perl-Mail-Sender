@@ -23,7 +23,7 @@ Summary(sv):	Mail::Sender Perlmodul
 Summary(uk):	Модуль для Perl Mail::Sender
 Summary(zh_CN):	Mail::Sender Perl дё©И
 Name:		perl-Mail-Sender
-Version:	0.8.04
+Version:	0.8.05
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
