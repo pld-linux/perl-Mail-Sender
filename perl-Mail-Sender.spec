@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl Mail::Sender
 Summary(zh_CN):	Mail::Sender Perl дё©И
 Name:		perl-Mail-Sender
 Version:	0.8.00
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -33,6 +33,8 @@ BuildRequires:	perl-MIME-Base64
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreq	'perl(Mail::Sender.config)'
 
 %description
 Mail::Sender is a module for sending mails with attachments through an
