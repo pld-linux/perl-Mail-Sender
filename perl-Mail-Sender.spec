@@ -10,7 +10,8 @@ Summary(pl):	Mail::Sender - wysy³anie poczty z za³±cznikami za po¶rednictwem ser
 Name:		perl-Mail-Sender
 Version:	0.8.10
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4dac1115bacca2ed0b8403c3874975da
