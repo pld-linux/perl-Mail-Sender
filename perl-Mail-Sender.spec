@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Mail
 %define	pnam	Sender
-Summary:	Mail-Sender perl module
-Summary(pl):	Modu³ perla Mail-Sender
+Summary:	Mail::Sender perl module
+Summary(pl):	Modu³ perla Mail::Sender
 Name:		perl-Mail-Sender
 Version:	0.7.12
 Release:	2
@@ -16,11 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Mail-Sender is a module for sending mails with attachments through an
+Mail::Sender is a module for sending mails with attachments through an
 SMTP server.
 
 %description -l pl
-Mail-Sender jest modu³em s³u¿±cym do wysy³ania poczty z za³±cznikami
+Mail::Sender jest modu³em s³u¿±cym do wysy³ania poczty z za³±cznikami
 przez serwer SMTP.
 
 %prep
