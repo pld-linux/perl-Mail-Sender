@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Mail-Sender
 Name:		perl-Mail-Sender
 Version:	0.7.04
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Mail/Mail-Sender-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Mail/Mail-Sender-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-MIME-Base64
@@ -16,12 +16,12 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Mail-Sender is a module for sending mails with attachments through an SMTP 
-server.
+Mail-Sender is a module for sending mails with attachments through an
+SMTP server.
 
 %description -l pl
-Mail-Sender jest modu³em s³u¿±cym do wysy³ania poczty z za³±cznikami przez
-serwer SMTP.
+Mail-Sender jest modu³em s³u¿±cym do wysy³ania poczty z za³±cznikami
+przez serwer SMTP.
 
 %prep
 %setup -q -n Mail-Sender-%{version}
