@@ -2,8 +2,8 @@
 Summary:	Mail-Sender perl module
 Summary(pl):	Modu³ perla Mail-Sender
 Name:		perl-Mail-Sender
-Version:	0.6.7
-Release:	3
+Version:	0.7.04
+Release:	1
 Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
