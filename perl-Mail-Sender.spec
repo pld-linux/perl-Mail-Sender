@@ -6,7 +6,7 @@
 %define		pdir	Mail
 %define		pnam	Sender
 Summary:	Mail::Sender - sending mails with attachments through an SMTP server
-Summary(pl):	Mail::Sender - wysy³anie poczty z za³±cznikami za po¶rednictwem serwera SMTP
+Summary(pl.UTF-8):   Mail::Sender - wysyÅ‚anie poczty z zaÅ‚Ä…cznikami za poÅ›rednictwem serwera SMTP
 Name:		perl-Mail-Sender
 Version:	0.8.10
 Release:	1
@@ -28,10 +28,10 @@ Mail::Sender provides an object oriented interface to sending mails.
 It doesn't need any outer program. It connects to a mail server
 directly from Perl, using Socket.
 
-%description -l pl
-Mail::Sender udostêpnia zorientowany obiektowo interfejs do wysy³ania
-poczty. Nie potrzebuje ¿adnego zewnêtrznego programu. £±czy siê
-bezpo¶rednio z Perla z serwerem, korzystaj±c z modu³u Socket.
+%description -l pl.UTF-8
+Mail::Sender udostÄ™pnia zorientowany obiektowo interfejs do wysyÅ‚ania
+poczty. Nie potrzebuje Å¼adnego zewnÄ™trznego programu. ÅÄ…czy siÄ™
+bezpoÅ›rednio z Perla z serwerem, korzystajÄ…c z moduÅ‚u Socket.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
