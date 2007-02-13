@@ -6,7 +6,7 @@
 %define		pdir	Mail
 %define		pnam	Sender
 Summary:	Mail::Sender - sending mails with attachments through an SMTP server
-Summary(pl.UTF-8):   Mail::Sender - wysyłanie poczty z załącznikami za pośrednictwem serwera SMTP
+Summary(pl.UTF-8):	Mail::Sender - wysyłanie poczty z załącznikami za pośrednictwem serwera SMTP
 Name:		perl-Mail-Sender
 Version:	0.8.10
 Release:	1
